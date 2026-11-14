@@ -1,0 +1,256 @@
+.course-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: #f3f6fc;
+}
+
+.course-form-container {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.course-form-container h1 {
+    text-align: center;
+    color: #202b46;
+    margin-bottom: 10px;
+}
+
+.course-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.course-form-container label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: 600;
+    color: #333;
+}
+
+.course-form-container input,
+.course-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.course-form-container textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.course-form-container button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    background: #3155d9;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.course-form-container button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.course-form-container .back-button {
+    margin-top: 10px;
+    background: #555;
+}
+
+.course-message {
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #e8f5e9;
+    color: #216b2b;
+    border-radius: 6px;
+}
+/* Manage Courses Page */
+
+.manage-course-page {
+    min-height: 100vh;
+    padding: 35px;
+    background: #f3f6fc;
+}
+
+.manage-course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.manage-course-header h1 {
+    color: #202b46;
+    margin-bottom: 8px;
+}
+
+.manage-course-header p {
+    color: #777;
+}
+
+.manage-course-header button {
+    padding: 12px 20px;
+    background: #3155d9;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.course-count {
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #333;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 25px;
+}
+
+.course-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.course-card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-no-image {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e1e6f0;
+    color: #555;
+}
+
+.course-card-content {
+    padding: 18px;
+}
+
+.course-card-content h2 {
+    font-size: 20px;
+    color: #202b46;
+    margin-bottom: 12px;
+}
+
+.course-card-content p {
+    margin: 9px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.course-description {
+    line-height: 1.5;
+}
+
+.course-price {
+    color: #3155d9;
+    margin: 15px 0;
+}
+
+.course-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.course-actions button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-course-button {
+    background: #198754;
+}
+
+.delete-course-button {
+    background: #dc3545;
+}
+
+.no-courses {
+    text-align: center;
+    background: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.no-courses p {
+    color: #777;
+    margin-top: 10px;
+}
+
+.course-loading {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.course-error {
+    padding: 12px;
+    background: #ffe5e5;
+    color: #b00020;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.manage-back-button {
+    margin-top: 30px;
+    padding: 12px 20px;
+    background: #555;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 600px) {
+    .manage-course-page {
+        padding: 18px;
+    }
+
+    .manage-course-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Edit Course Image */
+
+.edit-course-image {
+    display: block;
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    margin: 12px 0;
+    border-radius: 8px;
+    background: #f3f6fc;
+}
